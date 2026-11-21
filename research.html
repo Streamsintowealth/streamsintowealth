@@ -36,29 +36,26 @@
 @media(max-width:800px){#tradingChart,#tradingChart .tradingview-widget-container{height:600px!important;min-height:600px!important}}
 @media(max-width:520px){#tradingChart,#tradingChart .tradingview-widget-container{height:530px!important;min-height:530px!important}}
 
-/* Streams Into Wealth: Analyst Targets - scoped exclusively to the Research panel. */
-#siwAnalystPanel .siw-a-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:15px 0}
-#siwAnalystPanel .siw-a-metric{border:1px solid #dce9df;border-radius:13px;background:#f6faf6;padding:14px;min-width:0}
-#siwAnalystPanel .siw-a-label{display:block;color:#53695e;font-size:12px;font-weight:800;margin-bottom:5px}
-#siwAnalystPanel .siw-a-number{display:block;font-size:clamp(20px,2.8vw,29px);color:var(--green);font-weight:900;line-height:1.25}
-#siwAnalystPanel .siw-a-sub{font-size:11px;color:#62766b}
-#siwAnalystPanel .siw-a-status{padding:9px 12px;background:#f0f6f0;color:#335443;border-radius:9px;font-size:12px;font-weight:700;margin:11px 0}
-#siwAnalystPanel .siw-a-status[data-state="unavailable"]{background:#fff8e8;color:#795e26}
-#siwAnalystPanel .siw-a-status[data-state="stale"]{background:#fff8e8;color:#795e26}
-#siwAnalystPanel .siw-a-legend{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;margin:15px 0}
-#siwAnalystPanel .siw-a-category{padding:10px;border:1px solid #dfebdf;border-radius:11px;font-size:12px;background:#fbfdfa}
-#siwAnalystPanel .siw-a-category strong{display:block;color:#154b39;margin-bottom:4px}
-#siwAnalystPanel .siw-a-category small{display:block;color:#53695e;font-size:11px;line-height:1.35}
-#siwAnalystPanel .siw-a-table-wrap{max-width:100%;overflow-x:auto;margin-top:12px}
-#siwAnalystPanel .siw-a-table{width:100%;border-collapse:collapse;font-size:12px;min-width:650px}
-#siwAnalystPanel .siw-a-table th,#siwAnalystPanel .siw-a-table td{text-align:left;padding:10px 8px;border-bottom:1px solid #e1eae2;vertical-align:top}
-#siwAnalystPanel .siw-a-table th{font-size:11px;color:#4f6658;background:#f4f8f4}
-#siwAnalystPanel .siw-a-tag{display:inline-block;border:1px solid #c9ddcb;border-radius:999px;padding:3px 8px;background:#edf6ed;font-weight:900;color:#22543b;white-space:nowrap}
-#siwAnalystPanel .siw-a-tag[data-cat="Sell"],#siwAnalystPanel .siw-a-tag[data-cat="Underperform"]{background:#fff0ed;color:#9d4c40;border-color:#f0c7bf}
-#siwAnalystPanel .siw-a-tag[data-cat="Hold"]{background:#fff7df;color:#755a1f;border-color:#ebdab0}
-#siwAnalystPanel .siw-a-summary{font-size:12px;color:var(--muted);margin-top:10px}
-#siwAnalystPanel .siw-a-foot{font-size:11px;line-height:1.45;color:#5c6e60;margin-top:13px}
-@media(max-width:850px){#siwAnalystPanel .siw-a-legend{grid-template-columns:repeat(2,minmax(0,1fr))}#siwAnalystPanel .siw-a-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+/* Analyst explainer only; no external data feed required. */
+#siwAnalystPanel .siw-a-definitions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:13px 0 19px}
+#siwAnalystPanel .siw-a-definition{border:1px solid #dce9df;border-radius:12px;background:#f7faf7;padding:16px;min-width:0}
+#siwAnalystPanel .siw-a-definition strong{color:var(--green);font-weight:900}
+#siwAnalystPanel .siw-a-definition p{font-size:13px;margin:6px 0 0;color:#465c4c}
+#siwAnalystPanel .siw-a-example{border-left:4px solid var(--gold);background:#fff8e8;padding:12px 17px;border-radius:10px;margin:10px 0 23px}
+#siwAnalystPanel .siw-a-example strong{color:#6f5521}
+#siwAnalystPanel .siw-a-example p{margin:5px 0 0;font-size:13px;color:#544a30}
+#siwAnalystPanel .siw-a-legend{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:9px;margin:12px 0}
+#siwAnalystPanel .siw-a-category{padding:12px;border:1px solid #dce9df;border-radius:12px;background:#fbfdfa;min-width:0}
+#siwAnalystPanel .siw-a-category strong{display:block;color:var(--green);margin-bottom:5px;font-size:13px}
+#siwAnalystPanel .siw-a-category small{display:block;color:#52675b;font-size:12px;line-height:1.5}
+#siwAnalystPanel .siw-a-foot{font-size:12px;line-height:1.5;color:#52675b;margin:11px 0}
+#siwAnalystPanel .siw-a-visit{margin-top:22px;padding:20px;border:1px solid #c6decb;background:#edf6ef;border-radius:14px}
+#siwAnalystPanel .siw-a-visit h3{margin:0 0 8px}
+#siwAnalystPanel .siw-a-selected{font-size:14px;font-weight:850;color:var(--green);margin:7px 0 13px}
+#siwAnalystPanel .siw-a-action{display:inline-block;padding:11px 18px;border-radius:10px;text-decoration:none;background:var(--green);color:white;font-weight:900;font-size:13px}
+#siwAnalystPanel .siw-a-action:hover{background:#197654;color:white;text-decoration:none}
+@media(max-width:850px){#siwAnalystPanel .siw-a-legend{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){#siwAnalystPanel .siw-a-definitions{grid-template-columns:1fr}}
 @media(max-width:450px){#siwAnalystPanel .siw-a-legend{grid-template-columns:1fr}}
 
 </style></head><body data-page="research">
@@ -67,33 +64,35 @@
 <section class="panel"><form class="stock-search" data-search="research"><label class="sr-only" for="researchSearch">Company name or ticker</label><input autocomplete="off" data-advanced-placeholder="Search company name or stock symbol, e.g. DAL" data-simple-placeholder="Search ticker or company name, e.g. Delta Air Lines" id="researchSearch" placeholder="Search ticker or company name, e.g. Delta Air Lines" required=""/><button type="submit"><span data-advanced="Research company" data-simple="Show company">Show company</span></button></form><div class="search-message" id="researchSearchMessage" role="status"></div><div class="quick-tickers"><button class="ticker-chip" data-ticker="NVDA" type="button">NVDA</button><button class="ticker-chip" data-ticker="GOOGL" type="button">GOOGL</button><button class="ticker-chip" data-ticker="CRWD" type="button">CRWD</button><button class="ticker-chip" data-ticker="GEV" type="button">GEV</button><button class="ticker-chip" data-ticker="DAL" type="button">DAL</button><button class="ticker-chip" data-ticker="AAPL" type="button">AAPL</button></div></section>
 <section aria-live="polite" class="panel company-overview"><div class="company-heading"><div class="company-avatar" id="companyAvatar">N</div><div><span class="eyebrow" data-advanced="COMPANY PROFILE" data-simple="ABOUT THIS COMPANY">COMPANY PROFILE</span><h2 id="companyName">Select a company</h2><div class="company-meta" id="companyMeta"></div></div></div><p class="intro-note" id="companyNote"></p><div class="source-links" id="companyTopLinks"></div></section>
 <section class="panel"><div class="section-title"><h2 data-advanced="Interactive Technical Price Chart" data-simple="Interactive share-price chart">Interactive share-price chart</h2><p class="muted"><span data-advanced="TradingView external chart; quotes may be delayed according to its data source." data-simple="Use TradingView to explore prices and chart patterns.">Use TradingView to explore prices and chart patterns.</span></p></div><div class="trading-chart" id="tradingChart"><p><span data-advanced="Select an issuer to load the TradingView technical chart." data-simple="Choose a stock to see how its price has moved.">Choose a stock to see how its price has moved.</span></p></div><a class="quiet-link" href="https://www.tradingview.com/" id="tradingViewLink" rel="noopener" target="_blank"><span data-advanced="Open TradingView ↗" data-simple="See the full stock chart on TradingView ↗">Open TradingView ↗</span></a></section>
-<section class="panel" id="siwAnalystPanel" aria-label="Analyst ratings and price targets">
+<section class="panel" id="siwAnalystPanel" aria-label="Understanding analyst ratings and price targets">
   <div class="section-title">
-    <span class="eyebrow" data-simple="WALL STREET OPINIONS" data-advanced="SELL-SIDE ANALYST COVERAGE">WALL STREET OPINIONS</span>
-    <h2 data-simple="Analyst Ratings &amp; Price Targets" data-advanced="Analyst Recommendations &amp; Price Targets">Analyst Ratings &amp; Price Targets</h2>
-    <p class="muted" data-simple="What investment researchers think this company's shares may be worth. These are opinions, not promises." data-advanced="Third-party price-target estimates and firm-issued recommendations. Forecasts are uncertain and not investment advice.">What investment researchers think this company's shares may be worth. These are opinions, not promises.</p>
+    <span class="eyebrow" data-simple="UNDERSTANDING ANALYST OPINIONS" data-advanced="ANALYST FORECASTS &amp; RECOMMENDATIONS">UNDERSTANDING ANALYST OPINIONS</span>
+    <h2 data-simple="What do analyst ratings and price targets mean?" data-advanced="How to interpret analyst ratings and price targets">What do analyst ratings and price targets mean?</h2>
+    <p class="muted" data-simple="Analysts study companies and share opinions about where their stock prices could go. These are educated estimates, not guarantees." data-advanced="Research analysts publish forward-looking stock price estimates and investment recommendations. Different methodologies and time horizons can lead to different conclusions.">Analysts study companies and share opinions about where their stock prices could go. These are educated estimates, not guarantees.</p>
   </div>
-  <div id="siwAnalystStatus" class="siw-a-status" data-state="unavailable" role="status" aria-live="polite">Checking available analyst data…</div>
-  <div class="siw-a-grid" aria-label="Target price summary">
-    <div class="siw-a-metric"><span class="siw-a-label" data-simple="Average target" data-advanced="Consensus price target">Average target</span><strong class="siw-a-number" id="siwTargetAvg">—</strong></div>
-    <div class="siw-a-metric"><span class="siw-a-label" data-simple="Lowest target" data-advanced="Low analyst target">Lowest target</span><strong class="siw-a-number" id="siwTargetLow">—</strong></div>
-    <div class="siw-a-metric"><span class="siw-a-label" data-simple="Highest target" data-advanced="High analyst target">Highest target</span><strong class="siw-a-number" id="siwTargetHigh">—</strong></div>
-    <div class="siw-a-metric"><span class="siw-a-label" data-simple="Middle target" data-advanced="Median analyst target">Middle target</span><strong class="siw-a-number" id="siwTargetMedian">—</strong></div>
+  <h3 data-simple="Understanding the price targets" data-advanced="Interpreting target-price statistics">Understanding the price targets</h3>
+  <div class="siw-a-definitions">
+    <div class="siw-a-definition"><strong data-simple="Price target" data-advanced="Analyst price target">Price target</strong><p data-simple="One analyst's estimate of what one share could be worth, usually about 12 months from now." data-advanced="A research analyst's forward price estimate for one share, commonly with a 12-month horizon; horizons and assumptions can vary.">One analyst's estimate of what one share could be worth, usually about 12 months from now.</p></div>
+    <div class="siw-a-definition"><strong data-simple="Average target" data-advanced="Consensus / mean target">Average target</strong><p data-simple="Add the available analysts' targets and divide by the number of targets. This is a group average, not a guaranteed future price." data-advanced="The arithmetic mean of included analysts' targets; coverage, dates and outliers can affect the consensus.">Add the available analysts' targets and divide by the number of targets. This is a group average, not a guaranteed future price.</p></div>
+    <div class="siw-a-definition"><strong data-simple="Lowest and highest targets" data-advanced="Low / high analyst targets">Lowest and highest targets</strong><p data-simple="The most cautious and most optimistic published targets in the group. They show how much analyst opinions differ." data-advanced="The bottom and top of the published target range, reflecting dispersion in analysts' expectations.">The most cautious and most optimistic published targets in the group. They show how much analyst opinions differ.</p></div>
+    <div class="siw-a-definition"><strong data-simple="Middle target" data-advanced="Median target">Middle target</strong><p data-simple="The target in the middle after sorting them from lowest to highest. A few very high targets affect this less than the average." data-advanced="The median of the target distribution, which is less sensitive to extreme values than the mean.">The target in the middle after sorting them from lowest to highest. A few very high targets affect this less than the average.</p></div>
   </div>
-  <div class="siw-a-legend" aria-label="Five rating categories">
-    <div class="siw-a-category"><strong>Strong Buy</strong><small>Conviction Buy, Top Pick — much stronger expected performance.</small></div>
-    <div class="siw-a-category"><strong>Buy</strong><small>Outperform, Overweight, Accumulate — expected to beat peers.</small></div>
-    <div class="siw-a-category"><strong>Hold</strong><small>Neutral, Market Perform, Equal-Weight — no strong direction.</small></div>
-    <div class="siw-a-category"><strong>Underperform</strong><small>Underweight, Reduce, Moderate Sell — expected to lag peers.</small></div>
-    <div class="siw-a-category"><strong>Sell</strong><small>Sell, Strong Sell — meaningful downside or relative weakness expected.</small></div>
+  <div class="siw-a-example"><strong data-simple="Quick example" data-advanced="Illustrative target-price implication">Quick example</strong><p data-simple="If a stock costs $100 today and an analyst targets $120, that suggests a possible 20% price gain—not a promise. A $90 target would suggest a possible 10% loss." data-advanced="Illustration: a $120 target versus a $100 reference price implies +20% price-only upside; a $90 target implies −10% downside. Targets exclude dividends and are subject to forecast risk.">If a stock costs $100 today and an analyst targets $120, that suggests a possible 20% price gain—not a promise. A $90 target would suggest a possible 10% loss.</p></div>
+  <h3 data-simple="Understanding the five analyst ratings" data-advanced="Common recommendation grades and equivalent terminology">Understanding the five analyst ratings</h3>
+  <div class="siw-a-legend" aria-label="Five analyst rating categories">
+    <div class="siw-a-category"><strong>Strong Buy</strong><small data-simple="Top Pick, Conviction Buy — analysts expect especially strong results." data-advanced="Often called Top Pick or Conviction Buy; implies particularly high conviction in relative outperformance.">Top Pick, Conviction Buy — analysts expect especially strong results.</small></div>
+    <div class="siw-a-category"><strong>Buy</strong><small data-simple="Outperform, Overweight, Accumulate — expected to do better than the market or similar companies." data-advanced="Outperform, Overweight, Accumulate or Add; an expectation of favorable performance, often relative to a benchmark.">Outperform, Overweight, Accumulate — expected to do better than the market or similar companies.</small></div>
+    <div class="siw-a-category"><strong>Hold</strong><small data-simple="Neutral, Market Perform, Equal-Weight — no strong reason to expect much better or worse performance." data-advanced="Neutral, Market Perform, Equal-Weight or Sector Perform; approximately in-line expected relative performance.">Neutral, Market Perform, Equal-Weight — no strong reason to expect much better or worse performance.</small></div>
+    <div class="siw-a-category"><strong>Underperform</strong><small data-simple="Underweight, Reduce — expected to do worse than the market or its peers. The price does not have to fall." data-advanced="Underweight, Reduce or Moderate Sell; weaker expected performance relative to a benchmark, not necessarily a negative absolute return.">Underweight, Reduce — expected to do worse than the market or its peers. The price does not have to fall.</small></div>
+    <div class="siw-a-category"><strong>Sell</strong><small data-simple="Strong Sell — analysts see significant downside or believe better alternatives exist." data-advanced="Sell or Strong Sell; implies a material negative outlook or especially weak expected relative performance.">Strong Sell — analysts see significant downside or believe better alternatives exist.</small></div>
   </div>
-  <h3 data-simple="Which firms issued ratings?" data-advanced="Latest available firm ratings and analyst price targets">Which firms issued ratings?</h3>
-  <p class="siw-a-summary" id="siwAnalystCoverage">Individual analyst ratings appear here when the authorized data source provides them.</p>
-  <div class="siw-a-table-wrap"><table class="siw-a-table"><thead><tr>
-    <th>Firm / analyst</th><th>Original rating</th><th>Category</th><th>Price target</th><th>Dates</th><th>Analyst track record</th>
-  </tr></thead><tbody id="siwAnalystTable"><tr><td colspan="6">Select a stock to check analyst coverage.</td></tr></tbody></table></div>
-  <div class="source-links"><a id="siwAnalystStockAnalysis" target="_blank" rel="noopener noreferrer" href="https://stockanalysis.com/">Latest forecasts at Stock Analysis ↗</a><a id="siwAnalystTipRanks" target="_blank" rel="noopener noreferrer" href="https://www.tipranks.com/">Analyst track records at TipRanks ↗</a></div>
-  <p class="siw-a-foot" data-simple="New numbers are checked daily only after a licensed data source is connected. A daily check does not mean analysts change their ratings daily. Firm ratings and individual analyst star scores are different; no scores are guessed." data-advanced="Scheduled updates require an authorized provider and GitHub Actions. Firm recommendations may have separate dates from price-target revisions. Personal analyst-star rankings are shown only when independently sourced; blank means unverified.">New numbers are checked daily only after a licensed data source is connected. A daily check does not mean analysts change their ratings daily. Firm ratings and individual analyst star scores are different; no scores are guessed.</p>
+  <p class="siw-a-foot" data-simple="Different firms use different words. Check each firm's original rating, the date, and the reason behind it. A firm's name alone is not a universal star rating; analyst track records must be checked individually." data-advanced="Recommendation labels and rating benchmarks vary across firms. Assess the original wording, analyst identity, publication date and assumptions; individual analyst performance scores are source-specific, not universal firm ratings.">Different firms use different words. Check each firm's original rating, the date, and the reason behind it. A firm's name alone is not a universal star rating; analyst track records must be checked individually.</p>
+  <div class="siw-a-visit" aria-live="polite">
+    <h3 data-simple="See targets for your selected company" data-advanced="Open the selected company's current analyst forecasts">See targets for your selected company</h3>
+    <p id="siwAnalystCompany" class="siw-a-selected">Choose a company above to see its analyst forecasts.</p>
+    <a id="siwAnalystStockAnalysis" class="siw-a-action" href="https://stockanalysis.com/stocks/nvda/forecast/" target="_blank" rel="noopener noreferrer">View analyst forecasts for NVDA ↗</a>
+    <p class="siw-a-foot" data-simple="This opens Stock Analysis for the exact stock you selected. Look for the average, high and low targets, the rating, who issued it, and its date. Some details may require a subscription." data-advanced="The link opens the selected ticker's Stock Analysis forecast page, where available consensus, analyst estimates, ratings and publication dates are maintained externally. Availability and access vary by security.">This opens Stock Analysis for the exact stock you selected. Look for the average, high and low targets, the rating, who issued it, and its date. Some details may require a subscription.</p>
+  </div>
 </section>
 
 <div class="split"><section class="panel"><h2><span data-advanced="Business Model &amp; Reportable Segments" data-simple="What this company does">What this company does</span></h2><div class="copy-block" id="companyDescription"></div><h3><span data-advanced="Operating &amp; Reportable Segments" data-simple="Main parts of its business">Main parts of its business</span></h3><div id="companySegments"></div></section><section class="panel"><h2><span data-advanced="Competitive Advantages / Economic Moat" data-simple="What makes it hard to compete against?">What makes it hard to compete against?</span></h2><div id="companyMoat"></div><p class="source-warning"><span data-advanced="(check research for verification)" data-simple="Check the company’s own reports before trusting this claim.">(check research for verification)</span></p><h3><span data-advanced="Corporate Lifecycle Classification" data-simple="Company growth stage">Company growth stage</span></h3><div id="companyStage"></div></section></div>
@@ -370,76 +369,20 @@ let busy=false;const obs=new MutationObserver(()=>{if(busy)return;busy=true;Prom
 window.addEventListener('siw:language',paintText);document.addEventListener('DOMContentLoaded',()=>{paintText();obs.observe(document.querySelector('main')||document.body,{subtree:true,childList:true,characterData:true})});
 })();
 </script><script id="siwAnalystTargetsFeature">
-/* Targeted research-page feature; no API key is ever sent to visitors. */
-(function () {
+/* Company-specific forecast link: updates when a visitor selects another stock. */
+(function(){
   'use strict';
-  const panel=document.getElementById('siwAnalystPanel');
-  if(!panel)return;
-  const $=id=>document.getElementById(id);
-  const html=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-  const dollars=v=>typeof v==='number'&&Number.isFinite(v)&&v>=0?'$'+v.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2}):'—';
-  const date=v=>typeof v==='string'&&/^\d{4}-\d{2}-\d{2}/.test(v)?v.slice(0,10):null;
-  const mode=()=>{try{return localStorage.getItem('siw-language')==='advanced'?'advanced':'simple'}catch(_){return 'simple'}};
-  const say=(plain,technical)=>mode()==='simple'?plain:technical;
-  let active='', requestId=0, cache=null;
-  const readFeed=()=>cache??(cache=fetch('analyst-targets.json?day='+new Date().toISOString().slice(0,10),{cache:'no-store'})
-    .then(r=>{if(!r.ok)throw new Error('Data file not deployed');return r.json()})
-    .catch(()=>({symbols:{},status:'not-connected'})));
-  const status=(message,state)=>{const box=$('siwAnalystStatus');box.textContent=message;box.dataset.state=state};
-  function updateLinks(symbol){
-    const safe=String(symbol||'').toLowerCase().replace(/[^a-z0-9.\-]/g,'');
-    $('siwAnalystStockAnalysis').href='https://stockanalysis.com/stocks/'+encodeURIComponent(safe)+'/forecast/';
-    $('siwAnalystTipRanks').href='https://www.tipranks.com/stocks/'+encodeURIComponent(safe)+'/forecast';
-  }
-  function clearNumbers(){for(const id of ['siwTargetAvg','siwTargetHigh','siwTargetLow','siwTargetMedian'])$(id).textContent='—'}
-  function renderRow(f){
-    const name=html(f.firm||'Firm not named');
-    const analyst=f.analyst?'<br><small>'+html(f.analyst)+'</small>':'';
-    const original=html(f.rawRating||'Not provided');
-    const cat=f.category&&['Strong Buy','Buy','Hold','Underperform','Sell'].includes(f.category)?f.category:null;
-    const label=cat?'<span class="siw-a-tag" data-cat="'+html(cat)+'">'+html(cat)+'</span>':'Not classified';
-    const gradeDate=date(f.ratingDate),targetDate=date(f.targetDate);
-    const dates=[gradeDate?'Rating: '+gradeDate:null,targetDate?'Target: '+targetDate:null].filter(Boolean).map(html).join('<br>')||'Not dated';
-    const star=Number.isInteger(f.analystStars)&&f.analystStars>=0&&f.analystStars<=5&&f.starSource&&f.analyst?
-      '<span title="'+html(f.starSource)+'; individual analyst score, not a firm score">'+html(f.analystStars)+' / 5 ★ <small>('+html(f.starSource)+')</small></span>':'Not independently rated';
-    let price=dollars(f.priceTarget);
-    if(f.sourceUrl&&/^https:\/\//i.test(f.sourceUrl)){try{const u=new URL(f.sourceUrl);if(['http:','https:'].includes(u.protocol))price+='<br><a href="'+html(u.toString())+'" target="_blank" rel="noopener noreferrer">Source ↗</a>'}catch(_){}}
-    return '<tr><td><strong>'+name+'</strong>'+analyst+'</td><td>'+original+'</td><td>'+label+'</td><td>'+price+'</td><td>'+dates+'</td><td>'+star+'</td></tr>';
-  }
-  async function show(symbol){
-    symbol=String(symbol||'').toUpperCase().replace(/[^A-Z0-9.\-]/g,'');
+  const link=document.getElementById('siwAnalystStockAnalysis');
+  const selected=document.getElementById('siwAnalystCompany');
+  if(!link||!selected)return;
+  window.siwAnalystTargetsRender=function(stock){
+    if(!stock||!stock.symbol)return;
+    const symbol=String(stock.symbol).toUpperCase().replace(/[^A-Z0-9.\-]/g,'');
     if(!symbol)return;
-    active=symbol;let id=++requestId;
-    updateLinks(symbol);clearNumbers();
-    status(say('Checking analyst coverage for '+symbol+'…','Checking licensed analyst dataset for '+symbol+'…'),'loading');
-    $('siwAnalystCoverage').textContent='';
-    $('siwAnalystTable').innerHTML='<tr><td colspan="6">Checking…</td></tr>';
-    const feed=await readFeed();if(id!==requestId||active!==symbol)return;
-    const item=feed?.symbols?.[symbol];
-    if(!item){
-      const connected=feed?.status==='active';
-      status(connected?say('No verified analyst data for '+symbol+' in the latest feed. Use the research links below.','No licensed price-target or grade coverage for '+symbol+'. Open the original research sources.'):
-        say('Daily analyst data is not connected yet. Use the live source links below.','No licensed API feed has been activated for the Research page. Use provider source links.'),'unavailable');
-      $('siwAnalystCoverage').textContent=connected?'A missing value is not a zero or a Sell rating.':'Connect an authorized data source to display targets and firm ratings here.';
-      $('siwAnalystTable').innerHTML='<tr><td colspan="6">No independently verified rows are available on this site yet.</td></tr>';
-      return;
-    }
-    const targets=item.targets||{};
-    $('siwTargetAvg').textContent=dollars(targets.consensus);
-    $('siwTargetLow').textContent=dollars(targets.low);
-    $('siwTargetHigh').textContent=dollars(targets.high);
-    $('siwTargetMedian').textContent=dollars(targets.median);
-    let age=null;try{age=Math.floor((Date.now()-Date.parse(feed.generatedAt))/86400000)}catch(_){}
-    const stale=typeof age==='number'&&Number.isFinite(age)&&age>=3;
-    const checked=date(feed.generatedAt),estimateDate=date(item.targetAsOf);
-    const stamp=checked?(say('Checked: ','Last automated refresh: ')+checked):say('Date of check not available.','Provider refresh timestamp unavailable.');
-    status((stale?'Older snapshot — ':'')+stamp+(estimateDate?' · Target data: '+estimateDate:''),stale?'stale':'ready');
-    const rows=Array.isArray(item.firms)?item.firms:[];
-    $('siwAnalystCoverage').textContent=rows.length?`${rows.length} firm${rows.length===1?'':'s'} shown. Rating and target dates may differ. This is not an analyst success-rate ranking.`:'There are no current firm-level records in this data snapshot.';
-    $('siwAnalystTable').innerHTML=rows.length?rows.slice(0,30).map(renderRow).join(''):'<tr><td colspan="6">No firm-level records supplied for this symbol.</td></tr>';
-  }
-  window.siwAnalystTargetsRender=(stock)=>{if(stock&&stock.symbol)show(stock.symbol)};
-  window.addEventListener('siw:language',()=>{if(active)show(active)});
+    const name=String(stock.name||symbol).trim();
+    link.href='https://stockanalysis.com/stocks/'+encodeURIComponent(symbol.toLowerCase())+'/forecast/';
+    link.textContent='View '+name+' ('+symbol+') analyst forecasts ↗';
+    selected.textContent=name+' ('+symbol+')';
+  };
 })();
-
 </script></body></html>
