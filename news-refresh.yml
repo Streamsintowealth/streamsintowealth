@@ -1,0 +1,34 @@
+name: Refresh Streams Into Wealth NEWS headlines
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '27 * * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Read publisher RSS feeds (headlines and original links only)
+        run: python refresh_news.py
+      - name: Commit if the headline index changed
+        run: |
+          git add news-feed.json
+          if ! git diff --cached --quiet; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "Update NEWS source headlines"
+            git push
+          else
+            echo "No new headlines to publish."
+          fi
